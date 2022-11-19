@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100 vw;
+    background-color: #c2c0c7;
+}
+
+
+.container{
+    position: relative;
+}
+
+.container .card{
+    width: 320px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.container .card:before{
+    content: '';
+    position: absolute;
+    clip-path: circle(150px at 80% 0%);
+    background-color: #2596be;
+    height: 100%;
+    width: 100%;
+}
+
+
+.container .card:after{
+    content: 'Nike';
+    top: 25%;
+    overflow: hidden;
+    position: absolute;
+    font-size: 12em;
+    font-weight: 800;
+    color: lightgray;
+    width: 100%;
+    font-style: oblique;
+}
+
+.container .card .imgb img{
+    position: absolute;
+    transform: rotate(-35deg);
+    right: 10%;
+    top:-5%;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.container .card .content{
+    position: absolute;
+    top: 70%;
+    z-index: 999;
+    width: 100%;
+}
+
+.container .card .content .name{
+    text-align: center;
+}
+
+.container .card .content .size{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.container .card .content .size span{
+    margin-left: 10px;
+    color: #374f5c;
+    font-weight: bold;
+}
+
+.container .card .content .price{
+    margin-top: 5%;
+    left: -2%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container .card .content .price .mon{
+    color: #1b262e;
+    font-weight: bolder;
+    display: flex;
+    gap: 10px;
+}
